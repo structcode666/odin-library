@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel = "stylesheet" href = "../reset.css">
+    <link rel = "stylesheet" href = "../styles.css">
+    <link rel="stylesheet" href="library-styles.css">
+    <link rel="icon" href="../icons/book.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class = "sidebar">
+        <div class="sidebar-dashboard">
+            <img src="../icons/view-dashboard.svg" alt="">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="sidebar-dashboard">
+            <img src="../icons/home.svg" alt="">
+            <h2>Home</h2>
+        </div>
+        <a class="sidebar-dashboard" href="library/library.html" target="_blank" >
+            <img src="../icons/book.svg" alt="">
+            <h2>Library</h2> 
+        </a>
+        <div class="sidebar-dashboard">
+            <img src="../icons/android-messages.svg" alt="">
+            <h2>Messages</h2>
+        </div>
+        <div class="sidebar-dashboard">
+            <img src="../icons/clock-outline.svg" alt="">
+            <h2>History</h2>
+        </div>
+        <div class="sidebar-dashboard">
+            <img src="../icons/note-multiple.svg" alt="">
+            <h2>Tasks</h2>     
+        </div>
+        <div class="sidebar-dashboard">
+            <img src="../icons/account-group.svg" alt="">
+            <h2>Communities</h2>    
+        </div>
+        <div class="sidebar-dashboard">
+            <img src="../icons/cog.svg" alt="">
+            <h2>Settings</h2>  
+        </div>
+        <div class="sidebar-dashboard">
+            <img src="../icons/message-question.svg" alt="">
+            <h2>Support</h2>     
+        </div>
+        <div class="sidebar-dashboard">
+            <img src="../icons/shield-check.svg" alt="">
+            <h2>Privacy</h2>      
+        </div>
+    </div>
+    <div class = "header">
+        <!-- Top Row -->
+         <div class="top-row">
+            <div class="search-bar">
+                <div class="menu-item">
+                    <img src="../icons/magnify.svg" alt="">
+                </div>
+                <input type="search" name="search">
+            </div>
+            <div class="acc-details">
+                <div class="menu-item">
+                    <img src="../icons/bell-ring-outline.svg" alt="">
+                </div>
+                <div class="avatar-1">
+                    <img src="../icons/avatar-1.png" alt="">
+                </div>
+                <div class="name">Tasi Ahmed</div>
+            </div>
+         </div>
+        <!-- Bottom Row -->
+         <div class="bottom-row">
+            <div class="avatar">
+                <img src="../icons/avatar-1.png" alt="">
+            </div>
+            <div class="profile">
+                <p class="greeting">Hi There</p>
+                <p class= "name">Tasi <span class="username">(@tasi)</span></p>
+            </div>
+            <div class="buttons">
+                <button class = "btn" id = "new-btn">New</button>
+                <button class = "btn">Upload</button>
+                <button class = "btn">Share</button>
+            </div>
+         </div>
+    </div>
+    <main class="main">
+        <!-- Projects -->
+        <div class="projects">
+            <h3>Your Books</h3>
+            <div class="cards">
+
+            </div>
+        </div>
+    </main>
+
+    <dialog  class = "modal" id = "modal"> 
+        <div class="form-content">
+            <span class = "close"> &times; </span>
+            <div class="form">
+                <h1 class="form-title">Add Book</h1>
+                <form action="post" class="user-input">
+                    <div class="form-input-field">
+                        <label for="book-title">Title</label>
+                        <input type="text" id = "book-title" name="book-title">
+                    </div>
+                    <div class="form-input-field">
+                        <label for="book-author">Author</label>
+                        <input type="text" id = "book-author" name="book-author">
+                    </div>
+                    <div class="form-input-field">
+                        <label for="book-pages">Pages</label>
+                        <input type="number" id = "book-pages" name="book-pages">
+                    </div>
+                    <div class="form-input-field read-field">
+                        <label for="book-read">Read</label>
+                        <input type="checkbox" id = "book-read" name="book-read" >
+                    </div>
+                    <div class="form-submit-field">
+                        <button type = "submit" class="submit-button">ADD BOOK</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+     </dialog>
+
+    <script src="main.js"></script>
+</body>
+</html>
