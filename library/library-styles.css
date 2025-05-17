@@ -15,74 +15,117 @@ dialog::backdrop {
   }
 
 
-  .user-input input{
-    padding : 8px;
-    margin: 15px 0;
-    width: 100%;
-    border: 1.5px solid black;
-    border-radius: 3px;
-  }
+.user-input input{
+  padding : 8px;
+  margin: 15px 0;
+  width: 100%;
+  border: 1.5px solid black;
+  border-radius: 3px;
+}
 
-  .read-field{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-  }
+.read-field{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
 
-  .read-field input[type = "checkbox"]{
+.read-field input[type = "checkbox"]{
 
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    cursor: pointer;;
-  }
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;;
+}
 
-  .submit-button{
-    background-color: #1E90FF;
-    border: none;
-    border-color: none;
-    border-radius: 10px;
-    width: 150px;
-    color: white;
-    font-weight: bold;
-    font-size: 1.3rem;
-    padding: 5px;
-    cursor: pointer;   
-  }
+.submit-button{
+  background-color: #1E90FF;
+  border: none;
+  border-color: none;
+  border-radius: 10px;
+  width: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 5px;
+  cursor: pointer;   
+}
 
-  .form-submit-field{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:25px;
-  }
+.form-submit-field{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:25px;
+}
 
-  .close{
-    display: flex;
-    flex-direction: row;
-    font-size: 2rem;
-    width : 100%;
-    justify-content: flex-end;
-    cursor: pointer;
-  
-  }
+.close{
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  width : 100%;
+  justify-content: flex-end;
+  cursor: pointer;
 
-  .form-title{
-    margin-bottom:20px;
-  }
+}
 
-  label{
+.form-title{
+  margin-bottom:20px;
+}
 
-    font-size: 1.2rem;
-    color: #808080;
-  }
+label{
 
-  .form-content{
-    display:flex;
-    flex-direction: column;
+  font-size: 1.2rem;
+  color: #808080;
+}
 
-  }
+.form-content{
+  display:flex;
+  flex-direction: column;
+}
+
+.projects{
+
+  padding-right: 1rem;
+}
+
+.delete-icon{
+
+  width:25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+
+.card h5{
+
+  font-size: 2rem;
+}
+
+.card-text{
+
+  font-size: 1.5rem;
+}
+
+.book-read{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+
+  align-items: center;
+}
+
+input[type = "checkbox"]{
+  width:20px;
+  height: 20px;
+  border : 2px solid #333;
+  border-radius: 4px;
+}
+
+input[type = "checkbox"]:checked{
+  background-color: green;
+}
+
+
   
 
   
